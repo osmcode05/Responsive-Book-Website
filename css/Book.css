@@ -1,0 +1,200 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --first-color: hsl(230, 62%, 56%);
+  --title-color: hsl(229, 70%, 16%);
+  --text-color: hsl(229, 16%, 45%);
+  --body-color: hsl(228, 29%, 97%);
+  --box-color: hsl(0, 100%, 99%);
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Montagu Slab", serif;
+}
+/*=============== Commun Properties ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    background-color: var(--body-color);
+    font-family: var(--body-font);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--second-font);
+    color: var(--title-color);
+}
+p{
+    color: var(--text-color);
+}
+.box{
+    background-color: var(--box-color);
+}
+/* < =============== NavBar =============== > */
+.navbar{
+    background-color: var(--body-color);
+}
+.navbar-nav .nav-link{
+    color: var(--text-color);
+    transition: .3s;
+}
+.navbar-nav .nav-link:hover{
+    color: #4960d4;
+}
+.navbar-nav .nav-link.active{
+    color: #4960d4;
+    background-color: transparent;
+    font-weight: bolder;
+}
+.navbar form i{
+    color: var(--title-color);
+}
+.offcanvas{
+    backdrop-filter: blur(10px);
+}
+.login{
+    background-color: var(--body-color);
+    height: 450px;   
+    width: 400PX;
+    color: var(--title-color);
+}
+input{
+    outline: none;
+    font-size: 1rem
+}
+input::placeholder{
+    font-size: 1rem;
+    color: #babed2;
+    font-weight: bold;
+}
+/* < =============== Home =============== > */
+.home{
+    padding-top: 5rem;
+}
+.home h1{
+    font-size: 4rem;
+}
+.home .carousel i{
+    color: var(--text-color);
+}
+.carousel-indicators .active {
+    transform: scale(1.3);
+}
+.carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 5px;
+    background-color: var(--text-color);
+    transition: .5s ;
+    border: solid 2PX transparent;
+    border-radius: 10px;
+}
+.carousel-indicators {
+    bottom: -30PX;
+}
+/* < =============== featured =============== > */
+.featured article img{
+    height: 170px;
+    width: 120px;
+}
+.featured article .media {
+    transform: translateX(120%);
+    transition: .5s;
+}
+.featured article:hover .media {
+    transform: translateX(-8px);
+}
+/* < =============== DISCOUNT =============== > */
+.discount img{
+    height: 350px;
+    width: 250px;
+}
+.discount img:nth-child(1){
+    transform: rotate(-12deg) translateX(7%);
+}
+.discount img:nth-child(2){
+    transform: rotate(12deg)  translateX(-7%);
+}
+/* < =============== NEW =============== > */
+.new img{
+    height: 200px;
+    width: 150px;
+}
+/* < =============== JOIN =============== > */
+.join form{
+    width: 35%;
+}
+.join h1{
+    color: #c6cdeb;
+}
+/* < =============== TESTIMONIAL =============== > */
+.testimonial img{
+    height: 120PX;
+    width: 120PX;
+}
+/* < =============== FOOTER =============== > */
+footer{
+    color: var(--text-color);
+}
+footer ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+/*=============== Dark Theme ===============*/
+.Dark-theme{
+    --title-color: hsl(229, 48%, 85%);
+    --text-color: hsl(230, 16%, 70%);
+    --body-color: hsl(228, 12%, 8%);
+    --box-color: hsl(231, 11%, 12%);
+}
+/*=============== Button Scroll Up ===============*/
+#btnScroll{
+    padding: .4rem .7rem;
+    margin-bottom: 4rem;
+    background-color: var(--box-color);
+    color: var(--title-color);
+    bottom: -100%;
+    transition: .3s ease-in-out;
+}
+/* < =================== Breckpoints ================== > */
+/* --- Xsmall device --- */
+@media screen and (width <= 576px) {
+    .login{
+        width: 330PX;
+    }
+    .home h1{
+        font-size: 2.5rem;
+    }
+    .discount img{
+        height: 200px;
+        width: 150px;
+    }
+    [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+        display: none;
+    }
+}
+/* --- meduim and small device --- */
+@media screen and (width <= 991px) {
+    .navbar-nav{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0.9rem 0;  
+        background-color: var(--body-color);    
+        box-shadow: 0px 0px 15px 1px var(--box-color);
+    }
+    .featured article:hover .media {
+        transform: translateX(120%);
+    }
+    .navbar-nav .nav-link.active{
+        transform: scale(1.4);
+    }
+    .join form{
+        width: 75%;
+    }
+}
