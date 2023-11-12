@@ -181,12 +181,9 @@ footer ul li a:hover{
         right: 0;
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 0.9rem 0;  
+        padding: 0.5rem;  
         background-color: var(--body-color);    
         box-shadow: 0px 0px 15px 1px var(--box-color);
-    }
-    .navbar-nav .nav-link.active{
-        transform: scale(1.4);
     }
     .join form{
         width: 75%;
