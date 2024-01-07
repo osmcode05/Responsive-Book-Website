@@ -6,6 +6,8 @@
     <title>Responsive BOOK website - OSM</title>
     <!-- =========== Icon ============= -->
     <link rel="icon" href="img/favicon.png">
+        <!-- =========== Swiper css file ============= -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- =========== bootstrap css file ============= -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- =========== css file ============= -->
@@ -162,200 +164,153 @@
          <section class="featured" id="featured">
           <div class="container pt-4 pb-4 text-center">
             <h1>Featured Books</h1>
-            <div class="row mt-4 row-gap-3">
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-1.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-2.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-3.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-4.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-5.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-6.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-7.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-8.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-9.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-10.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-home-1.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
-                 <article class="col-lg-3 col-md-4 col-6 ps-md-3 pe-md-3 ps-2 ps-2">
-                  <div class="box rounded w-100 p-3 position-relative overflow-hidden">
-                    <img src="img/book-home-2.png" class="img-fluid" alt="Image">
-                    <h5>Featured Book</h5>
-                    <div class="d-flex gap-2 fw-bold">
-                      <p class="ms-auto">$11.99</p>
-                      <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
-                    </div>
-                    <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
-                    <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
-                      <a href="#"><i class="fa-brands fa-x-twitter fs-5 "></i></a>
-                      <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
-                      <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
-                    </div>
-                  </div>
-                 </article>
+
+            <div class="featured_container mt-4">
+
+              <div class="featured_swiper swiper">
+                <div class="swiper-wrapper"> 
+
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-1.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-2.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-3.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-4.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-5.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-6.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-7.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-8.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                  <article class="position-relative text-center overflow-hidden p-3 border swiper-slide">
+                      <img src="img/book-9.png" alt="Image">
+                      <h5>Featured Book</h5>
+                      <div class="d-flex gap-2 fw-bold">
+                        <p class="ms-auto">$11.99</p>
+                        <p class="opacity-75 me-auto text-decoration-line-through">$19.99</p>
+                      </div>
+                      <button class="btn btn-primary mt-2 p-2">Add To Cart</button>
+                      <div class="media position-absolute top-0 end-0 d-flex flex-column gap-3 mt-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart fs-5"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram fs-5 "></i></a>
+                      </div>
+                  </article>
+                 
+                </div>
+
+                <div class="swiper-button-prev rounded border p-3">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div class="swiper-button-next rounded border p-3">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+              </div>
+
             </div>
+
           </div>
          </section>
          <!--==================== DISCOUNT ====================-->
@@ -610,6 +565,8 @@
         <button class="position-fixed end-0 border-0 shadow rounded mb-lg-3 me-2" id="btnScroll">
           <i class="fa-solid fa-arrow-up"></i>
         </button>
+    <!--==================== bootstrap js file ====================-->
+    <script src="js/swiper-bundle.min.js"></script>
     <!--==================== bootstrap js file ====================-->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- ================== js file ==================-->

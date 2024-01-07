@@ -24,3 +24,31 @@ function change() {
     }
 }
 change()
+/* < ================== FEATURED SWIPER ================= > */
+let swiperFeatured = new Swiper('.featured_swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor : true,
+    slidesPerView : 'auto',
+    centeredSlides : 'auto',
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    breakpoints: {
+        1150: {
+            slidesPerView : 4,
+            centeredSlides : false,
+        },
+        991: {
+            slidesPerView : 3,
+            centeredSlides : false,
+        },
+        769: {
+            slidesPerView : 2,
+            centeredSlides : false,
+        }
+    }
+});

@@ -91,10 +91,12 @@ input::placeholder{
 .carousel-indicators {
     bottom: -30PX;
 }
-/* < =============== featured =============== > */
+/* < =============== Featured =============== > */
+.featured article{
+    background-color: var(--box-color);
+}
 .featured article img{
-    height: 170px;
-    width: 120px;
+    width: 150px;
 }
 .featured article .media {
     transform: translateX(120%);
@@ -102,6 +104,17 @@ input::placeholder{
 }
 .featured article:hover .media {
     transform: translateX(-8px);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: initial;
+    height: initial;
+    background-color: var(--body-color);
+    font-size: .9rem;
 }
 /* < =============== DISCOUNT =============== > */
 .discount img{
